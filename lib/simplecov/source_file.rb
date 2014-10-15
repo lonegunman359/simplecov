@@ -87,9 +87,9 @@ module SimpleCov
       return @lines if defined? @lines
 
       # Warning to identify condition from Issue #56
-      if coverage.size > src.size
-        $stderr.puts "Warning: coverage data provided by Coverage [#{coverage.size}] exceeds number of lines in #{filename} [#{src.size}]"
-      end
+      # if coverage.size > src.size
+      #   $stderr.puts "Warning: coverage data provided by Coverage [#{coverage.size}] exceeds number of lines in #{filename} [#{src.size}]"
+      # end
 
       # Initialize lines
       @lines = []
